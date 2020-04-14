@@ -1,0 +1,9 @@
+<body>
+    <h2>Test</h2>
+    <script src="AlphaVantage.js"></script>
+    <script>
+        let AV = new AlphaVantage();
+        AV.getStock("Apple");
+        AV.getStockList(["Microsoft", "Amazon", "Tesla"]);
+    </script>
+</body>
