@@ -1,21 +1,21 @@
 class stock{
-    constructor() {
-        console.log("Creating stock.");
-    }
-    
-    getValue(stockAbr){
 
-        // request most recent price as held in database
+    constructor(name,value) {this.name = name, this.value =value;
+        console.log("Creating stock.")
+    }
+ 
+    getValue(){
+        return this.value;
     }
     
-    getName(stockAbr){
+    getName(){
         //get full name using the abbreviation 
-        console.log("Retrieving" + stockAbr + "full name")
-        return "";
+        console.log("Retrieving stock name")
+        return this.name;
     }
     
-    updateValue(stockAbr){
+    updateValue(){
         //change value to new value"
-        console.log("Stock: " + stockAbr + "value updated")
+        console.log("Stock: " + this.name + "value updated")
     }
 }
