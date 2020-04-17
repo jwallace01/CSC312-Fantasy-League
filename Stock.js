@@ -1,4 +1,4 @@
-class stock{
+class Stock{
 
     constructor(name,value) {this.name = name, this.value =value;
         console.log("Creating stock.")
